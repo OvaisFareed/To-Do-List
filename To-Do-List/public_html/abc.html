@@ -1,0 +1,27 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <script src="bower_components/angularjs/angular.js"></script>
+        <script src="abc.js"></script>
+    </head>
+    <body ng-app="module1">
+        <div ng-controller="SimpleArrayCtrl">
+            <label ng-repeat="fruitName in fruits">
+  <input
+    type="checkbox"
+    name="selectedFruits[]"
+    value="{{fruitName}}"
+    ng-checked="selection.indexOf(fruitName) > -1"
+    ng-click="toggleSelection(fruitName)"
+  >
+  {{fruitName}}
+</label>
+        </div>
+    </body>
+</html>
