@@ -1,0 +1,9 @@
+{
+  "firebase": "blazing-torch-900",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
